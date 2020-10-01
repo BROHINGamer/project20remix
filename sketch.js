@@ -2,7 +2,7 @@ var car,wall,speed,mass;
 function setup() {
   createCanvas(2000,400);
   car=createSprite(50, 200, 50, 50);
-  wall=createSprite(800,200,30,60);
+  wall=createSprite(800,200,30,200);
   speed=random(55,90);
   mass=random(400,1500);
   
@@ -17,10 +17,10 @@ function draw() {
     if(deformation>180){
       car.shapeColor="red";
     }
-    if(deformation<180&&deformation>100){
+   else  if(deformation<180&&deformation>100){
       car.shapeColor="yellow";
     }
-    if(deformation<100){
+  else  if(deformation<100){
       car.shapeColor="green";
     }
   }
